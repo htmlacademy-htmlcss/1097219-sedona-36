@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Татьяна Изосимова](https://up.htmlacademy.ru/htmlcss/36/user/1097219).
-* Наставник: [Андрей Ефимов](https://htmlacademy.ru/profile/id367335).
+* Наставник: [Андрей Ефимов](https://up.htmlacademy.ru/htmlcss/36/user/367335).
 
 ---
 
