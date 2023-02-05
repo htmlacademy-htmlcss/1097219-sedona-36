@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* это цвет #f2f2f2 серой подложки, не уверена, что использую правильно*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+/* пока оставила так, в таком варианте проще ориентироваться
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+*/
+
+/* header */
+
+.first-header {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/* main */
+
+/* не поняла про контрастный цвет фона (поставила чудовище #776e6e),
+как именно цвет должен соотноситься с изображениями? */
+
+.hero-index {
+  color: #000000;
+  background-color: #776e6e;
+  background-image: url(../images/main/hero-item.svg), url(../images/main/hero-background.jpg);
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, repeat-y;
+  background-position: bottom center, top center;
+}
+
+.advantages h2,
+.booking h2,
+.services h2,
+.footer-subscribe h2 {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages li {
+  list-style-type: none;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages-paragraph {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.title-color,
+.color-paragraph {
+  color: #ffffff;
+}
+
+.color-blue {
+  background-color: #82B3D3;
+}
+
+.color-blue-2 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.color-blue-3 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.services li {
+  list-style-type: none;
+}
+
+.services-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.services-paragraph,
+.booking-paragraph {
+  text-align: center;
+}
+
+/* footer */
+
+.footer-subscribe {
+  background: #776e6e url(../images/footer/subscribe-background.jpg) no-repeat center;
+  background-size: 100% auto;
+  color: #ffffff;
+}
+
+.social-media {
+  color: #000000;
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.social-media li {
+  list-style-type: none;
+}
+
+.social-link {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-link-vk {
+  background-image: url(../images/footer/social-vk.svg);
+}
+
+.social-link-tg {
+  background-image: url(../images/footer/social-telegram.svg);
+}
+
+.social-link-yt {
+  background-image: url(../images/footer/social-youtube.svg);
+}
+
+.contact-phone {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 40px;
+  font-weight: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.htmlacademy-link {
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* calalog: main */
+
+.main-inner {
+  background: #776e6e url(../images/catalog/catalog-filter-background.jpg) no-repeat center top;
+  background-size: 100% auto;
+  color: #000000;
+}
+
+.breadcrumbs {
+  color: #ffffff;
+}
+
+.inner-title {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.filter-title {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-item {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 23px;
+}
