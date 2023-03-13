@@ -1168,11 +1168,11 @@ body {
   background-color: #e6e6e6;
 }
 
-.modal-input:focus {
+.modal-input:focus-visible:placeholder-shown {
   outline: 3px solid #83b3d3;
 }
 
-.modal-input:active {
+.modal-input:focus-visible {
   outline: 3px solid #000000;
 }
 
@@ -1211,8 +1211,31 @@ body {
   margin: auto;
 }
 
+.modal-button-count:hover svg {
+  fill: #000000;
+}
+
+.modal-button-count:focus {
+  border: 3px solid #82b3d3;
+  border-radius: 4px;
+}
+
+.modal-button-count:active svg {
+  outline: none;
+  opacity: 0.2;
+}
+
+.modal-icon-count {
+  margin: auto;
+}
+
 .button-minus {
   border-radius: 4px 0 0 4px;
+}
+
+.button-minus:focus {
+  border: 3px solid #82b3d3;
+  border-radius: 4px;
 }
 
 .button-plus {
@@ -1235,7 +1258,7 @@ body {
   appearance: textfield;
 }
 
-input[type="number"]::-webkit-inner-spin-button {
+.modal-input-person::-webkit-inner-spin-button {
   display: none;
 }
 
