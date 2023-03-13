@@ -23,6 +23,12 @@ body {
   background-color: #f2f2f2;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page {
   display: flex;
   width: 1200px;
@@ -43,6 +49,7 @@ body {
   background-color: #756157;
   border-radius: 4px;
   padding: 8px 26px;
+  font-family: inherit;
   font-weight: 700;
   border: none;
   cursor: pointer;
@@ -72,9 +79,9 @@ body {
 }
 
 .page-header-logo-link {
+  position: relative;
   width: 140px;
   margin-right: 28px;
-  position: relative;
   margin-bottom: -12px;
 }
 
@@ -88,7 +95,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  min-width: 550px;
+  width: 550px;
   list-style-type: none;
 }
 
@@ -129,34 +136,30 @@ body {
   align-items: center;
   margin: 0;
   margin-left: auto;
-  padding: 2px 0 0 40px;
+  padding: 2px 0 2px 40px;
   max-width: 420px;
 }
 
 /* a right*/
 
-.navigation-search {
+.navigation-service {
   display: block;
   position: relative;
   color: inherit;
   min-width: 44px;
+  min-height: 44px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center;
   text-decoration: none;
 }
 
 .navigation-search {
   background-image: url("../images/header/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 44px;
-  margin: 0;
 }
 
 .navigation-counter {
   background-image: url("../images/header/heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 44px;
-  margin: 0;
 }
 
 .navigation-counter-amount {
@@ -169,12 +172,13 @@ body {
   padding: 5px 4px;
   border-radius: 10px;
   min-width: 12px;
-  right: 4px;
-  top: -3px;
+  right: 5px;
+  top: 0;
 }
 
 .navigation-button {
-  margin-top: 5px;
+  display: block;
+  margin-top: 1px;
   margin-left: 20px;
   padding: 8px 34px;
   font-size: 16px;
@@ -191,7 +195,7 @@ body {
   color: #ffffff;
   background-color: #333333;
   background-image: url("../images/main/hero-decor.svg"), url("../images/main/hero-background.jpg");
-  background-size: 100% 58px, cover;
+  background-size: auto, cover;
   background-repeat: no-repeat;
   background-position: bottom center, top center;
   padding: 50px 0 77px;
@@ -205,7 +209,7 @@ body {
 }
 
 .content-container-reasons {
-  padding: 43px 250px;
+  padding: 70px 250px;
 }
 
 .main-title {
@@ -220,7 +224,6 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-top: 25px;
   list-style-type: none;
 }
 
@@ -249,23 +252,30 @@ body {
 .content-title-accent {
   position: relative;
   margin: 0;
-  padding-top: 102px;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.content-title {
-  position: relative;
-  margin: 0;
-  padding-top: 113px;
   padding-bottom: 62px;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
 }
 
-.content-title::before {
+.content-item-container {
+  padding: 102px 85px;
+}
+
+.content-item-box {
+  padding: 113px 84px;
+}
+
+.content-title {
+  position: relative;
+  margin: 0;
+  padding-bottom: 62px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.content-title::after {
   position: absolute;
   content: "";
   width: 60px;
@@ -274,7 +284,7 @@ body {
   opacity: 0.3;
   margin-left: -30px;
   left: 50%;
-  bottom: -30px;
+  bottom: 30px;
 }
 
 .content-paragraph {
@@ -286,7 +296,16 @@ body {
 /* рекомендации */
 
 .content-container-advice {
-  padding: 40px 348px 15px;
+  padding: 64px 348px 40px;
+}
+
+.content-title-advice {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  padding-top: 183px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .content-title-house {
@@ -301,16 +320,8 @@ body {
   background-image: url("../images/main/advantages-icon-souvenir.svg");
 }
 
-.content-title-advice {
-  font-size: 24px;
-  line-height: 28px;
-  margin: 0;
-  padding-top: 183px;
-  text-transform: uppercase;
-}
-
 .booking-content {
-  padding: 68px 304px 96px;
+  padding: 98px 304px 98px;
 }
 
 .booking-button {
@@ -324,7 +335,7 @@ body {
 
 .content-subscribe {
   text-align: center;
-  padding: 69px 258px 106px 258px;
+  padding: 96px 258px 104px;
 }
 
 .content-subscribe-accent {
@@ -373,7 +384,7 @@ body {
 
 .page-footer {
   display: flex;
-  padding: 40px 70px 30px 70px;
+  padding: 48px 70px 30px 70px;
 }
 
 /* соцсети */
@@ -414,6 +425,7 @@ body {
   font-size: 40px;
   line-height: 40px;
   margin: 0 auto;
+  padding-right: 55px;
 }
 
 .contact-phone:hover,
@@ -441,7 +453,7 @@ body {
   background-color: #333333;
   background-image: url("../images/catalog/catalog-filter-background.jpg");
   background-size: cover;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 57px;
   box-sizing: border-box;
 }
 
@@ -603,6 +615,7 @@ body {
 /* фильтр: форма + слайдер */
 
 .filter-group-input {
+  font-family: inherit;
   margin-left: 70px;
 }
 
@@ -645,6 +658,7 @@ body {
 }
 
 .filter-input-current {
+  font-family: inherit;
   border-radius: 0 4px 4px 0;
 }
 
@@ -737,6 +751,7 @@ body {
 
 .button-reset {
   background-color: transparent;
+  border: 3px solid transparent;
   font-size: 14px;
   line-height: 20px;
 }
@@ -748,6 +763,7 @@ body {
 
 .button-reset:focus {
   border: 3px solid #83b3d3;
+  background-color: transparent;
 }
 
 .button-reset:hover {
@@ -760,7 +776,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 36px 70px 40px;
+  padding: 50px 70px 40px;
 }
 
 .search-result {
@@ -799,12 +815,12 @@ body {
 .sorting-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   list-style-type: none;
   width: 160px;
   margin: 0;
   margin-left: 70px;
   padding: 0;
+  gap: 8px;
 }
 
 .sorting-item {
@@ -856,6 +872,8 @@ body {
   grid-template-columns: repeat(3, 340px);
   list-style-type: none;
   margin: 0;
+  margin-top: -8px;
+  margin-bottom: 39px;
   padding: 0 70px;
   gap: 20px;
 }
@@ -866,7 +884,7 @@ body {
   padding: 20px;
   column-gap: 20px;
   row-gap: 16px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
 
@@ -943,21 +961,14 @@ body {
   text-align: center;
 }
 
-.hotel-list::after {
-  position: absolute;
-  content: "";
-  width: 1058px;
-  border: 1px solid #e6e6e6;
-  transform: translateY(938px);
-}
-
 /* пагинация */
 
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
   margin: 0 70px 0 70px;
-  padding: 80px 0 60px 0;
+  padding: 40px 0 60px 0;
+  border-top: 1px solid #e6e6e6;
   list-style-type: none;
 }
 
@@ -1040,6 +1051,13 @@ body {
   cursor: pointer;
 }
 
+.modal-close-icon {
+  position: absolute;
+  margin: auto;
+  right: 18px;
+  top: 18px;
+}
+
 .modal-close-button:hover {
   background-color: #e6e6e6;
 }
@@ -1120,6 +1138,7 @@ body {
   height: 48px;
   box-sizing: border-box;
   color: #000000;
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1157,7 +1176,11 @@ body {
   color: #000000;
   margin: 0;
   margin-top: 12px;
-  margin-right: 64px;
+  margin-right: 46px;
+}
+
+.title-children {
+  margin-right: 84px;
 }
 
 /* модальное окно: кнопки + - */
@@ -1171,10 +1194,12 @@ body {
   cursor: pointer;
 }
 
-/* не знаю как лучше отформатировать - + по макету
-либо отрисовать иначе, я понимаю, что нужно сделать отдельно поля
-и отдельно внутри кнопки с заданными параметрами, потому что фокус на них вешать
-не понимаю, как лучше */
+.minus-icon {
+  position: relative;
+  margin: auto;
+  right: 0;
+  top: -4px;
+}
 
 .button-minus {
   border-radius: 4px 0 0 4px;
@@ -1185,6 +1210,7 @@ body {
 }
 
 .modal-input-person {
+  font-family: inherit;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -1197,11 +1223,18 @@ body {
   width: 31px;
 }
 
+input[type="number"] {
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
 /* модальное окно: тултип */
 
 .modal-tooltip {
   position: absolute;
-  width: 256px;
   margin-top: 11px;
   margin-left: 62px;
 }
@@ -1219,29 +1252,22 @@ body {
   background-position: center;
 }
 
-/* не знаю как заставить тултип работать */
-
 .modal-tooltip-text {
-  /* display: none; */
+  display: none;
   position: absolute;
-  top: 40px;
-  right: 95px;
+  width: 256px;
   font-size: 16px;
   line-height: 20px;
   text-align: left;
+  top: 40px;
+  right: -117px;
   padding: 15px 18px 18px 22px;
-  width: 256px;
   color: #ffffff;
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   z-index: 1;
 }
-
-/* .modal-tooltip-toggle:hover + .modal-tooltip-text,
-.modal-tooltip-toggle:focus + .modal-tooltip-text {
-  display: block;
-} */
 
 .modal-tooltip-text::after {
   position: absolute;
@@ -1250,11 +1276,15 @@ body {
   width: 19px;
   height: 9px;
   transform: rotate(360deg);
-  top: -7%;
+  top: -6%;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+}
+
+.modal-tooltip-toggle:hover + .modal-tooltip-text,
+.modal-tooltip-toggle:focus + .modal-tooltip-text {
+  display: block;
 }
 
 /* модальное окно: кнопка найти */
@@ -1263,7 +1293,7 @@ body {
   min-width: 577px;
   background-color: #83b3d3;
   border-radius: 10px;
-  padding: 18px 215px;
+  padding: 18px 50px;
 }
 
 .modal-button:hover,

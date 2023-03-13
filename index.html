@@ -37,12 +37,12 @@
 
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-search" href="#!">
+              <a class="navigation-service navigation-search" href="#!">
                 <span class="visually-hidden">Поиск.</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-search navigation-counter" href="#!">
+              <a class="navigation-service navigation-counter" href="#!">
                 <span class="visually-hidden">Cчётчик избранного:</span>
                 <span class="navigation-counter-amount">12</span>
               </a>
@@ -74,29 +74,29 @@
           </div>
           <ul class="content-list">
             <li class="content-item-accent">
-              <div>
+              <div class="content-item-container">
                 <h3 class="content-title content-title-accent">Настоящий городок</h3>
                 <p class="content-paragraph">Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
               <img src="images/main/photo-1.jpg" width="800" height="385" alt="Изображение гостиницы.">
             </li>
-            <li class="content-item">
+            <li class="content-item content-item-box">
               <h3 class="content-title">Небольшая площадь</h3>
               <p class="content-paragraph">Все достопримечательности находятся очень близко</p>
             </li>
-            <li class="content-item">
-              <h3 class="content-title">Красивая дорога</h3>
+            <li class="content-item content-item-box">
+              <h3 class="content-title">Красивая<br> дорога</h3>
               <p class="content-paragraph">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
-            <li class="content-item">
-              <h3 class="content-title">Мало туристов</h3>
+            <li class="content-item content-item-box">
+              <h3 class="content-title">Мало<br> туристов</h3>
               <p class="content-paragraph">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
             <li class="content-item-accent">
               <img src="images/main/photo-2.jpg" width="800" height="385" alt="Мост дьявола.">
-              <div>
-                <h3 class="content-title content-title-accent">Там есть мост дьявола</h3>
+              <div class="content-item-container">
+                <h3 class="content-title content-title-accent">Там есть<br> мост дьявола</h3>
                 <p class="content-paragraph">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
@@ -249,8 +249,8 @@
               <h3 class="modal-section-title">Взрослые:</h3>
               <button class="modal-button-count button-minus" type="button">
                 <span class="visually-hidden">Уменьшить.</span>
-                <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="minus-icon" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill-opacity="0.3" />
                 </svg>
               </button>
@@ -265,17 +265,17 @@
             </section>
 
             <section class="modal-section-children">
-              <h3 class="modal-section-title">Дети:</h3>
+              <h3 class="modal-section-title title-children">Дети:</h3>
               <span class="modal-tooltip">
-                <button class="modal-tooltip-toggle" type="button">
-                  <span class="modal-tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6
-                    до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </button>
+                <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-children"></button>
+                <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                  которые будут с вами, возраст которых от 6
+                  до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
               <button class="modal-button-count button-minus" type="button">
                 <span class="visually-hidden">Уменьшить.</span>
-                <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg">
+                <svg class="minus-icon" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2"
+                  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill-opacity="0.3" />
                 </svg>
               </button>
