@@ -113,17 +113,17 @@
             <p class="main-paragraph">Опытный персонал и качественное обслуживание!</p>
           </div>
           <ul class="content-list">
-            <li class="content-item content-item-advice content-house advice-box">
+            <li class="content-item content-item-advice content-house">
               <h3 class="content-title-advice">Жильё</h3>
               <p class="content-paragraph">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
-            <li class="content-item content-item-advice content-food advice-box">
+            <li class="content-item content-item-advice content-food">
               <h3 class="content-title-advice">Еда</h3>
               <p class="content-paragraph">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не
                 разочаруетесь!
               </p>
             </li>
-            <li class="content-item content-item-advice content-souvenir advice-box">
+            <li class="content-item content-item-advice content-souvenir">
               <h3 class="content-title-advice">Сувениры</h3>
               <p class="content-paragraph">Не только китайского,<br> но и настоящего местного<br> производства!
               </p>
@@ -229,7 +229,7 @@
           <fieldset class="modal-form-group">
             <div class="modal-input-container">
               <label class="modal-label" for="arrival-date">Дата Заезда:</label>
-              <input class="modal-input" type="text" placeholder="Укажите дату" name="date" id="arrival-date"
+              <input class="modal-input" type="text" placeholder="Укажите дату" name="date-arrival" id="arrival-date"
                 value="27 апреля 2020" required>
             </div>
             <p class="modal-text modal-text-current">Мы не можем отправить вас в прошлое.</p>
@@ -238,71 +238,65 @@
           <fieldset class="modal-form-group">
             <div class="modal-input-container">
               <label class="modal-label" for="departure-date">Дата Выезда:</label>
-              <input class="modal-input" type="text" placeholder="Укажите дату" name="date" id="departure-date"
+              <input class="modal-input" type="text" placeholder="Укажите дату" name="date-departure" id="departure-date"
                 value="1 сентября 2023" required>
             </div>
             <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
           </fieldset>
 
-          <section class="modal-section">
-            <section class="modal-section-adult">
-              <h3 class="modal-section-title">Взрослые:</h3>
+          <div class="modal-sections">
+            <div class="modal-section">
+              <label class="modal-label" for="adults">Взрослые:</label>
               <button class="modal-button-count button-minus" type="button">
                 <span class="visually-hidden">Уменьшить.</span>
                 <svg class="modal-icon-count" aria-hidden="true" focusable="false" width="14" height="2"
                   viewBox="0 0 14 2" fill="rgba(117, 97, 87, 0.3)" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                  <path d="M0 0L0 2L14 2V0L0 0Z" />
                 </svg>
               </button>
-              <input class="modal-input-person" type="number" value="2" required>
+              <input class="modal-input-person" name="adult-counter" id="adults" type="number" value="2" required>
               <button class="modal-button-count button-plus" type="button">
                 <span class="visually-hidden">Увеличить.</span>
                 <svg class="modal-icon-count" aria-hidden="true" focusable="false" width="14" height="14"
                   viewBox="0 0 14 14" fill="rgba(117, 97, 87, 0.3)" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                 </svg>
               </button>
-            </section>
+            </div>
 
-            <section class="modal-section-children">
-              <h3 class="modal-section-title title-children">Дети:</h3>
-              <span class="modal-tooltip">
-                <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
-                  <span class="visually-hidden">Всплывающая подсказка.</span>
-                </button>
-                <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
-                  которые будут с вами, возраст которых от 6
-                  до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            <div class="modal-section">
+              <span class="modal-label">
+                <label for="children">Дети:</label>
+                <span class="modal-tooltip">
+                  <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                    <span class="visually-hidden">Всплывающая подсказка.</span>
+                  </button>
+                  <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6
+                    до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
               <button class="modal-button-count button-minus" type="button">
                 <span class="visually-hidden">Уменьшить.</span>
                 <svg class="modal-icon-count" aria-hidden="true" focusable="false" width="14" height="2"
                   viewBox="0 0 14 2" fill="rgba(117, 97, 87, 0.3)" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
+                  <path d="M0 0L0 2L14 2V0L0 0Z" />
                 </svg>
               </button>
-              <input class="modal-input-person" type="number" value="2" required>
+              <input class="modal-input-person" name="children-counter" id="childrem" type="number" value="2" required>
               <button class="modal-button-count button-plus" type="button">
                 <span class="visually-hidden">Увеличить.</span>
                 <svg class="modal-icon-count" aria-hidden="true" focusable="false" width="14" height="14"
                   viewBox="0 0 14 14" fill="rgba(117, 97, 87, 0.3)" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                 </svg>
               </button>
-            </section>
-          </section>
-
+            </div>
+          </div>
+          <button class="modal-button button" type="submit">Найти</button>
         </form>
-        <button class="modal-button button" type="submit">Найти</button>
       </div>
     </div>
-
-    <script>
-      window.pixelperfect = {
-        breakpoints: [1200]
-      };
-    </script>
-    <script src="https://efiand.github.io/pixelperfect-tool/pixelperfect.min.js"></script>
   </body>
 
 </html>
