@@ -23,6 +23,11 @@ body {
   background-color: #f2f2f2;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .page {
   display: flex;
   width: 1200px;
@@ -1075,9 +1080,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-hidden {
+.modal-hidden {
   display: none;
-} */
+}
 
 .modal-wrapper {
   position: relative;
