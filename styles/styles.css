@@ -18,7 +18,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  width: 1200px;
+  min-width: 1200px;
   margin: 0 auto;
   background-color: #f2f2f2;
 }
@@ -644,7 +644,6 @@ body {
   opacity: 0.6;
 }
 
-
 .filter-input:focus-visible + .filter-checkbox,
 .filter-input:focus-visible + .filter-radio {
   outline: solid 3px #83b3d3;
@@ -879,7 +878,7 @@ body {
 .sorting-button {
   border-radius: 4px;
   padding: 22px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1086,6 +1085,7 @@ body {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
+  max-width: 577px;
 }
 
 .modal-close-button {
@@ -1147,8 +1147,7 @@ body {
   display: grid;
   margin: 0;
   padding: 0;
-  grid-template-rows: 48px 48px 48px auto;
-  gap: 48px;
+  gap: 23px;
 }
 
 .modal-form-group {
@@ -1157,28 +1156,26 @@ body {
   border: none;
 }
 
+.modal-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px
+}
+
 .modal-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.modal-section-adult {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.modal-section-children {
-  display: flex;
-  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .modal-label {
+  display: flex;
+  width: 125px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   padding-top: 12px;
+  padding-right: 12px;
 }
 
 .modal-input {
@@ -1228,7 +1225,7 @@ body {
 }
 
 .title-children {
-  margin-right: 84px;
+  margin-right: 10px;
 }
 
 /* модальное окно: кнопки + - */
@@ -1238,6 +1235,7 @@ body {
   margin: 0;
   padding: 0;
   width: 40px;
+  height: 48px;
   border: none;
   background-color: #f2f2f2;
   cursor: pointer;
@@ -1297,9 +1295,8 @@ body {
 /* модальное окно: тултип */
 
 .modal-tooltip {
-  position: absolute;
-  margin-top: 11px;
-  margin-left: 62px;
+  position: relative;
+  margin: 0 14px;
 }
 
 .modal-tooltip-toggle {
@@ -1307,6 +1304,7 @@ body {
   border: none;
   width: 26px;
   height: 26px;
+  margin-right: 46px;
   border-radius: 50%;
   background-color: #83b3d3;
   cursor: pointer;
@@ -1323,7 +1321,7 @@ body {
   line-height: 20px;
   text-align: left;
   top: 40px;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   padding: 22px 18px 18px 20px;
   color: #ffffff;
@@ -1336,7 +1334,7 @@ body {
 
 .modal-tooltip-text::after {
   position: absolute;
-  content: '';
+  content: "";
   background-image: url("../images/modal/modal-tooltip-triangle.svg");
   width: 19px;
   height: 9px;
@@ -1354,6 +1352,7 @@ body {
 /* модальное окно: кнопка найти */
 
 .modal-button {
+  margin-top: 25px;
   font-size: 20px;
   line-height: 24px;
   min-width: 577px;

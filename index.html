@@ -244,9 +244,9 @@
             <p class="modal-text">На эти даты есть свободные номера. Пока есть.</p>
           </fieldset>
 
-          <section class="modal-section">
-            <section class="modal-section-adult">
-              <h3 class="modal-section-title">Взрослые:</h3>
+          <div class="modal-sections">
+            <div class="modal-section">
+              <label class="modal-label" for="adults">Взрослые:</label>
               <button class="modal-button-count button-minus" type="button">
                 <span class="visually-hidden">Уменьшить.</span>
                 <svg class="modal-icon-count" aria-hidden="true" focusable="false" width="14" height="2"
@@ -254,7 +254,7 @@
                   <path d="M0 0L0 2L14 2V0L0 0Z" />
                 </svg>
               </button>
-              <input class="modal-input-person" type="number" value="2" required>
+              <input class="modal-input-person" id="adults" type="number" value="2" required>
               <button class="modal-button-count button-plus" type="button">
                 <span class="visually-hidden">Увеличить.</span>
                 <svg class="modal-icon-count" aria-hidden="true" focusable="false" width="14" height="14"
@@ -262,17 +262,19 @@
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                 </svg>
               </button>
-            </section>
+            </div>
 
-            <section class="modal-section-children">
-              <h3 class="modal-section-title title-children">Дети:</h3>
-              <span class="modal-tooltip">
-                <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
-                  <span class="visually-hidden">Всплывающая подсказка.</span>
-                </button>
-                <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
-                  которые будут с вами, возраст которых от 6
-                  до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+            <div class="modal-section">
+              <span class="modal-label">
+                <label for="children">Дети:</label>
+                <span class="modal-tooltip">
+                  <button class="modal-tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                    <span class="visually-hidden">Всплывающая подсказка.</span>
+                  </button>
+                  <span class="modal-tooltip-text" role="tooltip" id="tooltip-label-children">Укажите количество детей,
+                    которые будут с вами, возраст которых от 6
+                    до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </span>
               <button class="modal-button-count button-minus" type="button">
                 <span class="visually-hidden">Уменьшить.</span>
@@ -281,7 +283,7 @@
                   <path d="M0 0L0 2L14 2V0L0 0Z" />
                 </svg>
               </button>
-              <input class="modal-input-person" type="number" value="2" required>
+              <input class="modal-input-person" id="childrem" type="number" value="2" required>
               <button class="modal-button-count button-plus" type="button">
                 <span class="visually-hidden">Увеличить.</span>
                 <svg class="modal-icon-count" aria-hidden="true" focusable="false" width="14" height="14"
@@ -289,10 +291,10 @@
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                 </svg>
               </button>
-            </section>
-          </section>
+            </div>
+          </div>
+          <button class="modal-button button" type="submit">Найти</button>
         </form>
-        <button class="modal-button button" type="submit">Найти</button>
       </div>
     </div>
   </body>
