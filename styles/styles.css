@@ -1075,9 +1075,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-hidden {
+/* .modal-hidden {
   display: none;
-}
+} */
 
 .modal-wrapper {
   position: relative;
@@ -1123,6 +1123,7 @@ body {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
+  margin-right: 40px;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
