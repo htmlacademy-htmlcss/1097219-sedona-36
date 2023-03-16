@@ -941,6 +941,10 @@ img {
   grid-template-rows: min-content 1fr min-content;
 }
 
+.hotel-card-image {
+  grid-column: span 2;
+}
+
 .hotel-card-title {
   font-size: 24px;
   line-height: 28px;
